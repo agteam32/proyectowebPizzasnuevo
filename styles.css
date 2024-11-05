@@ -1,0 +1,549 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+.roboto-regular {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.roboto-medium {
+    font-family: "Roboto", sans-serif; 
+    font-weight: 500;
+    font-style: normal;
+}
+
+.roboto-bold {
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+   
+}
+
+
+/*===CSS Global ===*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+img,
+video {
+    width: 100%;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    color: white;
+    background-color: #222; /* Agregado: color de fondo oscuro */
+}
+
+/*===CSS Header===*/
+.header {
+    width: 100%; /*ok*/
+    height: 8.5rem;
+    background-color: black;  
+    display: flex;  
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    height: 120px;
+
+    
+}
+
+.logo-header {
+    width: 7rem; /*ok*/
+}
+
+.header-nav {
+    width: 100%;/*ok*/
+    height: 6.5rem;;
+    display: flex;
+    align-items: center; /* Centrar verticalmente los elementos del menú */
+    justify-content: space-around;
+    padding: 1rem 2rem;
+}
+
+.options {
+    display: flex;
+    gap: 50px; /* Agrega espacio entre las opciones del menú */
+}
+
+.options li a {
+    color: white;
+    text-transform: uppercase;
+    font-size: 16px;
+    padding: 2px; 
+    position: relative;
+}
+
+.options li a:hover::after,
+.options li a:focus::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: white;
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+}
+
+.boton-pedir-header{
+    background-color: #a13939;
+    border: none;
+    border-radius: 5px; 
+    color: white;
+    cursor: pointer;
+    padding: 10px 15px;
+    font-size: 14px;
+    margin-top: auto;
+}
+
+.boton-pedir-header:hover{
+    background-color:#8f3232;
+}
+/*===footer==*/
+.footer-caja{
+    background-color: rgb(13, 14, 14);
+    columns: white;
+    text-align: center;
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+
+}
+.network-social{
+    display: flex;
+    gap: 20px;
+}
+.social-link{
+    color: white;
+    font-size: 24px;
+    transition: color 0.3s;
+}
+.social-link:hover{
+    color: antiquewhite;
+}
+.copyright{
+    font-size: 24px;
+}
+.subtitle-footer{
+    font-size: 50px;
+    letter-spacing: 2px;
+    width: 100%;
+}
+/*===CSS Bienvenidos Pizzas ===*/
+
+.bienvenidos{
+    position: relative;
+    
+}
+.banner{
+    position: relative;
+    text-align: center;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100%;
+
+}
+.banner-imagen{
+    width: 100%;
+    height: auto;
+}
+.banner-text {
+    max-width: 50%; /* Ajusta el ancho para permitir el salto de línea */
+    margin-left: 10%;
+    background-color: rgba(0, 0, 0, 0.155); /* fondo semi-transparente */
+    padding: 10px; /* Añade un poco de espacio alrededor del texto */
+    border-radius: 5px; 
+    text-align: left;
+    position: absolute;
+    top: 30%;
+    left: 10%;
+}
+
+.title {
+    z-index: 100;
+    font-size: 7rem; /* Tamaño grande para el título */
+    font-weight: bold;
+    line-height: 1.2;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin: 0;
+}
+.subtitle-banner{
+    font-size: 2rem;
+    letter-spacing: 2px;
+    width: 100%;
+}
+
+
+
+
+
+/*===CSS Seccion Pizzas===*/
+
+.pizzas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;/*Agregar espaciado alrededor del contenedor*/
+}
+.pizzas-sabores {
+ background-color: rgba(255,255,255, 0.1);  /*Fondo semi-trasparente*/ 
+ border-radius: 8px;
+ box-shadow: 0 2px 10px rgba(0, 0,0, 0.3);
+ margin: 10px;
+ padding: 20px;
+ width: 250px;
+ height: 300px;
+ text-align: center;
+ display: flex;
+ flex-direction: column;
+ justify-content: space-between;
+ transition: transform 0.2; /*Efecto al pasar el mouse*/
+}
+.pizzas-sabores:hover {
+    transform: scale(1.05);/*Aumenta el tamaño al pasar el mouse */
+}
+.pizzas-sabores img {
+    border-radius: 5px;
+    margin-bottom: 10px;    
+}
+.boton-pedir{
+    background-color: #a13939;
+    border: none;
+    border-radius: 5px; 
+    color: white;
+    cursor: pointer;
+    padding: 10px 15px;
+    font-size: 14px;
+    margin-top: auto;
+}
+
+.boton-pedir:hover{
+    background-color:#8f3232;
+}
+.titulo-seccion-pizzas{
+    text-align: center;
+    font-size: 50px;
+    margin-top: 20px;
+    color: white;
+    
+}
+
+
+/* Sección empanadas */
+.empanadas-contenedor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #700fd6;
+    padding: 20px;
+    text-align: center;
+}
+
+.empanadas-titulo-h1 {
+    font-size: 4em;
+    color: white;
+    margin-bottom: 40px;
+}
+.empanadas-content{
+display: flex;
+justify-content: center;
+align-items: flex-start;
+gap: 20px;
+}
+
+.empanadas-lista {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 25%;
+    padding: 0 20px; /* Espacio lateral para separar listas de la imagen */
+
+}
+.empanadas-lista li{
+margin-bottom: 25px;
+}
+.empanadas-img{
+    width: 500px;
+    height: 350px;
+    margin: 0 20px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+
+
+.titulo-seccionEmpanadas{
+    text-align: center;
+    font-size: 50px;
+    margin-top: 20px;
+    
+}
+
+.boton-pedir-empanadas{
+    margin-top: 40px;
+    background-color: #a13939;
+    border: none;
+    border-radius: 5px; 
+    color: white;
+    cursor: pointer;
+    padding: 10px 15px;
+    font-size: 14px;
+}
+
+.boton-pedir-empandas:hover{
+    background-color:#8f3232;
+}
+
+/*===Seccion reseñas===*/
+.reseñas{
+    background-color: #4a4a4a;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;/*Agregar espaciado alrededor del contenedor*/
+}
+.titulo-reseñas{
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.reseñas-grid{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;/*espacio entre las tarjetas*/
+    max-width: 1000px;/*ancho maximo*/
+    justify-content: center;
+}
+
+.card-reseñas{
+background-color: #222;
+border-radius: 10px;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+width: 300px;
+padding: 20px;
+color: #fff;
+text-align: center;
+}
+
+.titulo-empanadas {
+    font-size: 20px; /* Ajusta el tamaño según lo que necesites */
+    
+}
+/*===Seccion proceso de creacion video===*/
+
+
+
+
+/*===Seccion formulario de contacto===*/
+
+
+/*Estilo gral formulario*/
+
+#formularioConsulta{
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    border-color: #f9f9f9;
+}
+/* Eliminar la línea del fieldset */
+#formularioConsulta fieldset {
+    border: none; /* Quita la línea del borde */
+    padding: 0;
+    margin: 0;
+}
+
+#formularioConsulta h2{
+    text-align: center;
+    font-size: 24px;
+    color: white;
+    margin-bottom: 20px;
+}
+
+#formularioConsulta h3{
+    font-size: 18px;
+    color: white;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+/*Campos leyendas y etiquetas*/
+#formularioConsulta fieldset{
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+
+#formularioConsulta legend {
+    font-size: 20px;
+    color: #eb5708;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+#formularioConsulta label {
+    display:  block;
+    font-weight: bold;
+    margin: 8px 0 4px;
+    color: rgb(255, 255, 255);
+}
+
+/*Estilo para los campos input*/
+#formularioConsulta input[type="text"],
+#formularioConsulta input[type="email"],
+#formularioConsulta input[type="date"],
+#formularioConsulta select,
+#formularioConsulta textarea {
+    width: calc(100% - 20px);
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid white;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+}
+
+/* Estilo para el select */
+#formularioConsulta select {
+    color: #222; /* Color del texto de las opciones seleccionadas */
+
+}
+
+/* Estilo de las opciones dentro del select */
+#formularioConsulta select option {
+    color: #222; /* Color del texto de las opciones */
+   
+}
+/*Estilo especifico para el area de texto*/
+#formularioConsulta textarea{
+    resize: vertical;
+}
+/*Estilo para los botones de seleccion*/
+#formularioConsulta input[type="radio"]{
+    margin-right: 5px;
+}
+
+/*Estilo del boton de envio*/
+#formularioConsulta input[type="submit"]{
+    display: block;
+    width: 100%;
+    font-size: 20px;
+    background-color: #0f90d6;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #fff;
+    transition: backgruond-color 0.3 ease;
+    margin-top: 20px;
+}
+
+
+/*redes sociales*/
+.network-social-formulario{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 15px;
+}
+.network-social-formulario .social-link{
+    color: white;
+    font-size: 24px;
+    transition: color 0.3s ease;
+}
+
+.network-social-formulario .social-link:hover{
+color: #007bff;
+}
+
+
+.Titulo-formulario{
+    font-size: 40px;  
+    color: white;
+    align-self: flex-start;
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+
+/*Seccion Local*/
+.contenedor-local {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;/*Agregar espaciado alrededor del contenedor*/
+}
+
+.tarjetas-contenedor{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+.card {
+  background-color:#222;
+  width: 300px;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0,0, 0.2);
+  text-align: center;
+  color: 333;
+
+}
+.card-imagen{
+  width: 100%;
+  height: auto;
+  border-radius: 10px 10px 0 0;
+  margin-bottom: 15px;
+}
+.card-info p {
+    margin: 5px 0;
+    font-size: 14px;
+}
+.boton-mapa {
+ background-color: #700fd6;
+ color: white;
+ padding: 10px 20px;
+ width: 150px;
+ text-align: center;
+ text-decoration: none;
+ border-radius: 5px;
+ margin-top: 15px;
+ transition: background-color 0.3s;
+ display: inline-block;
+ margin-top: 15px;
+}
+.boton-mapa:hover {
+    background-color: #5b08b1;
+}
+.Titulo-Locales{
+    font-size: 50px;  
+    color: #222;
+    align-self: flex-start;
+    padding-left: 20px;
+    margin-bottom: 20px;
+}

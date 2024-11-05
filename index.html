@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto Web</title>
+    <link rel="icon" href="icon/iconoalejos.ico">
+    <!--  Font Awesome para los íconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="./Css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    
+    <title>Proyecto Pizzas AG</title>
+   
+</head>
+
+<body>
+
+    <header class="header">
+    <!-- Inicio de Nav  -->    
+    <nav class="header-nav"> 
+     <a href="#index.html"> <img class="logo-header" src="img/Logo-Alejos2.jpg" alt="logo pizza alejos"></a>   
+     <ul class="options roboto-medium">
+        <li><a href="#index.html">Inicio</a></li>
+        <li><a href="index.html#pizzas">Pizzas</a></li>
+        <li><a href="index.html#empanadas-lista">Empanadas</a></li>
+        <li><a href="index.html#Local">Local</a></li>
+        <li><a href="index.html#formularioConsulta">Contacto</a></li>  
+     </ul>    
+     <div class="header-nav-icons">
+        <button class="boton-pedir-header">Pedir en línea <i class="fa fa-cart-shopping"></i></button>
+     </div>
+    </nav>
+    </header>
+    <!-- Inicio Imagen  -->
+    <section class="bienvenidos">
+        <div class="banner">
+            <img src="./img/fotoprincipalP.jpg" alt="Pizza principal" class="banner-imagen">
+            <div class="banner-text">
+        <H1 class="title roboto-bold ">Bienvenidos a Pizzas Alejos</H1>
+        <h2 class="subtitle-banner">Donde la pasión por la pizza se convierte en sabor</h2>
+        </div>
+    </div>
+    <!-- Seccion Pizzas  -->
+    </section>
+            
+            <h2 class="titulo-seccion-pizzas roboto-bold">Pedi tu Pizza</h2>
+            <div class="pizzas" id="pizzas">
+                <div class="pizzas-sabores">
+                    <img src="./img/americana.jpg" width="100px" alt="Pizza Americana">
+                    <h3 class="titulo-pizza roboto-bold" >Pizza Americana</h3>
+                    <button class="boton-pedir">Pedir en Línea</button>
+                </div>
+                <div class="pizzas-sabores">
+                    
+                    <img src="./img/RuculaJamonCrudo.jpg" width="100px" alt="Pizza Rucula y Jamón Crudo">
+                    <h3 class="titulo-pizza roboto-bold">Pizza Rucula y Jamón Crudo</h3>
+                    <button class="boton-pedir">Pedir en Línea</button>
+                </div>
+                <div class="pizzas-sabores">
+                   
+                    <img src="./img/panceta.jpg" width="100px" alt="Pizza de Champiñón">
+                    <h3 class="titulo-pizza roboto-bold">Pizza de Muzzarela con panceta</h3>
+                    <button class="boton-pedir">Pedir en Línea</button>
+                </div>
+                <div class="pizzas-sabores">
+                    
+                    <img src="./img/calabresa.jpg" width="100px" alt="Pizza Calabresa">
+                    <h3 class="titulo-pizza roboto-bold">Pizza Calabresa</h3>
+                    <button class="boton-pedir">Pedir en Línea</button>
+                </div>
+                <div class="pizzas-sabores">
+                    
+                    <img src="./img/margarita.jpg" width="100px" alt="Pizza Margarita">
+                    <h3 class="titulo-pizza roboto-bold">Pizza Margarita</h3>
+                    <button class="boton-pedir">Pedir en Línea</button>
+                </div>
+            </div>
+            <br><br>
+        </section>
+<!-- Listado de empanadas -->
+<section class="empanadas-contenedor">
+    <h1 class="empanadas-titulo-h1 roboto-bold">Elegí tus empanadas</h1>
+    
+    
+        <div class="empanadas-content">
+            <ul class="empanadas-lista">
+                <li class="titulo-empanadas roboto-bold">Carne</li>
+                <li class="titulo-empanadas roboto-bold">Carne Picante</li>
+                <li class="titulo-empanadas roboto-bold">Cebolla y Queso</li>
+                <li class="titulo-empanadas roboto-bold">Humita</li>
+                <li class="titulo-empanadas roboto-bold">Jamón y Queso</li>
+            </ul>
+          <img src="./img/empanadas.jpg" alt="Empanadas" class="empanadas-img">
+            <ul class="empanadas-lista">
+                <li class="titulo-empanadas roboto-bold">Pollo</li>
+                <li class="titulo-empanadas roboto-bold">Verdura</li>
+                <li class="titulo-empanadas roboto-bold">Mediterránea</li>
+                <li class="titulo-empanadas roboto-bold">Carne cortada a cuchillo</li>
+                <li class="titulo-empanadas roboto-bold">Bondiola BBQ</li>
+            </ul>
+        </div>
+
+        <button class="boton-pedir-empanadas">Pedir en Línea</button>
+    
+</section>
+
+
+
+             <!-- Inicio de video  -->
+<section>
+    <h1>Descubre Nuestro Proceso de Creación de Pizzas</h1>
+    <video src="./video/videoplayback.mp4" muted autoplay loop></video>
+</section>
+ <!-- Formulario de consulta -->
+<section>
+           
+<h2 class="Titulo-formulario roboto-bold">Envianos tu consulta</h2>
+<form action="show_data.html" method="post" id="formularioConsulta">
+    <fieldset>
+        <h2>Datos Personales</h2>
+        <label for="firstame">Nombre: </label>
+        <input size="30" type="text"name="firstame"id="firstame" placeholder="Ingrese su nombre" required>
+        <label for="lastname">Apellido: </label>
+        <input size="30" type="text" name="lastname"id="lastname" placeholder="Ingrese su apellido aqui" required>
+        <br><br>
+        <label for="Email">Email</label>
+        <input type="Email" name="Email" id="Email" placeholder="Ingrese su email">
+        <label for="celular">Celular </label>
+        <input size="25" type="text" name="telefono"  placeholder="Ingrese su numero de celular">
+        <br><br>
+        <label for="BirthDate">Fecha de Nacimiento</label>
+        <input type="date" name="BirthDate">
+        <p>
+            <h3>Sexo</h3>
+            <input type="radio" name="gender" value="Hombre" checked>Hombre
+            <input type="radio" name="gender" value="Mujer">Mujer
+            <input type="radio" name="gender" value="Otro">Otro
+        </p>
+        <h3>Como llegaste a nosotros:</h3>
+         <form action="submit" method="post"></form>
+            <label for="red social">Red social</label>
+            <select id="red social" name="red social">
+             <option value="instagram">instagram</option>
+             <option value="facebook">facebook</option>
+             <option value="Web">web</option>
+            </select><br><br>
+        <h3>Contanos cuales son tus pizzas preferidas</h3>
+           <form action="/submit" method="post"></form> 
+           <label for="sabores">Pizzas:</label>
+           <select id="sabores" name="sabores" multiple>
+            <option value="Muzzarela">Muzzarela</option>
+            <option value="Napolitana">Napolitana</option>
+            <option value="Fugazzeta">Fugazzeta</option>
+            <option value="Jamon">Jamon</option>
+            <option value="JamonYmorron">Jamon y Morron</option>
+            <option value="Calabreza">Calabreza</option>
+            <option value="Rucula">Rucula</option>
+            <option value="Provolone">Provolone</option>
+            <option value="Americana">Americana</option>
+            <option value="CuatroQuesos">Cuatro Cuatro Quesos</option>
+           </select><br><br>
+
+        <h3>Ingrese su mensaje</h3>    
+        <label for="comentarios">Comentarios:</label>
+        <textarea name="comentarios" id="comentarios" rows="5" cols="30"></textarea>
+        <br><br> 
+        <h2 class="roboto-bold">Seguinos en nuestras redes</h2>
+    <div class="network-social-formulario roboto-bold">
+        <a href="#" class="social-link" aria-label="Instagram">
+            <i class="fa-brands fa-instagram"></i>
+        </a>
+        <a href="#" class="social-link" aria-label="Facebook">
+            <i class="fa-brands fa-facebook"></i>
+        </a>
+        <a href="#" class="social-link" aria-label="LinkedIn">
+            <i class="fa-brands fa-linkedin"></i>
+        </a>
+        <a href="#" class="social-link" aria-label="Twitter">
+            <i class="fa-brands fa-twitter"></i>
+        </a>
+    </div>
+        <input type="submit" value="Enviar Mensaje">
+    </fieldset>
+    
+</form>
+<!-- Contenedor principal de la sección local -->
+<section class="contenedor-local">
+    <h2 class="Titulo-Locales roboto-bold">Conocé nuestro locales</h2>
+
+    <!-- Contenedor de tarjetas -->
+    <div class="tarjetas-contenedor">
+        <!-- Primera tarjeta -->
+        <div class="card">
+            <img src="./img/Local.jpg" alt="Imagen del local" class="card-imagen">
+            <div class="card-info">
+                <h3>Local Avellaneda</h3>
+                <p>Dirección: Calle Alsina 123</p>
+                <p>Teléfono: (123) 456-7890</p>
+                <a href="https://www.google.com/maps" target="_blank" class="boton-mapa">Ver Ubicacion</a>
+            </div>
+        </div>
+
+        <!-- Segunda tarjeta -->
+        <div class="card">
+            <img src="./img/Local.jpg" alt="Imagen del local" class="card-imagen">
+            <div class="card-info">
+                <h3>Local Barracas</h3>
+                <p>Dirección: Calle Verdadera 456</p>
+                <p>Teléfono: (098) 765-4321</p>
+                <a href="https://www.google.com/maps" target="_blank" class="boton-mapa">Ver Ubicacion</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+<section class="reseñas">
+    <h2 class="titulo-reseñas roboto-bold">Reseñas</h2>
+    <div class="reseñas-grid">
+    
+        <div class="card-reseñas">
+            <h2>Las mejores pizzas de avellaneda</h2>
+            <p>Son unas pizzas muy ricas y sabrosas, tienen todo tipo de variedades.</p>
+            <cite>Nicolas Mota</cite>
+        </div>
+        <div class="card-reseñas">
+            <h2>Las mejores pizzas de avellaneda</h2>
+            <p>Son unas pizzas muy ricas y sabrosas, tienen todo tipo de variedades.</p>
+            <cite>Alejo Giaimo</cite>
+        </div>
+        <div class="card-reseñas">
+            <h2>Las mejores pizzas de avellaneda</h2>
+            <p>Son unas pizzas muy ricas y sabrosas, tienen todo tipo de variedades.</p>
+            <cite>Jose Coppini</cite>
+        </div>
+    </div>
+</section>
+ <!-- footer de la pagina -->
+ <footer class="footer-caja">
+    <p class="subtitle-footer roboto-bold">Seguinos</p>
+    <div class="network-social roboto-bold">
+        <a href="#" class="social-link" aria-label="Instagram">
+            <i class="fa-brands fa-instagram"></i>
+        </a>
+        <a href="#" class="social-link" aria-label="Facebook">
+            <i class="fa-brands fa-facebook"></i>
+        </a>
+        <a href="#" class="social-link" aria-label="LinkedIn">
+            <i class="fa-brands fa-linkedin"></i>
+        </a>
+        <a href="#" class="social-link" aria-label="Twitter">
+            <i class="fa-brands fa-twitter"></i>
+        </a>
+    </div>
+    <div class="copyright">
+        <h6 class="roboto-medium"><i class="fa-solid fa-copyright" ></i> Todos los derechos reservados</h6>
+    </div>
+</footer>
+
+</body>
+</html>
+
+
