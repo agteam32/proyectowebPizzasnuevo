@@ -21,14 +21,15 @@
     <nav class="header-nav"> 
      <a href="#index.html"> <img class="logo-header" src="img/Logo-Alejos2.jpg" alt="logo pizza alejos"></a>   
      <ul class="options roboto-medium">
-        <li><a href="#index.html">Inicio</a></li>
+        <li><a href="index.html">Inicio</a></li>
         <li><a href="index.html#pizzas">Pizzas</a></li>
         <li><a href="index.html#empanadas-lista">Empanadas</a></li>
         <li><a href="index.html#Local">Local</a></li>
         <li><a href="index.html#formularioConsulta">Contacto</a></li>  
      </ul>    
      <div class="header-nav-icons">
-        <button class="boton-pedir-header">Pedir en línea <i class="fa fa-cart-shopping"></i></button>
+        <a class="boton-pedir-header roboto-medium"  href="Pedido.html">Pedir en Línea<i class="fa fa-cart-shopping"></i></a>
+
      </div>
     </nav>
     </header>
@@ -49,31 +50,32 @@
                 <div class="pizzas-sabores">
                     <img src="./img/americana.jpg" width="100px" alt="Pizza Americana">
                     <h3 class="titulo-pizza roboto-bold" >Pizza Americana</h3>
-                    <button class="boton-pedir">Pedir en Línea</button>
+                    <a class="boton-pedir roboto-medium" href="Pedido.html">Pedir en Línea</a>
                 </div>
+            
                 <div class="pizzas-sabores">
                     
                     <img src="./img/RuculaJamonCrudo.jpg" width="100px" alt="Pizza Rucula y Jamón Crudo">
                     <h3 class="titulo-pizza roboto-bold">Pizza Rucula y Jamón Crudo</h3>
-                    <button class="boton-pedir">Pedir en Línea</button>
+                    <a class="boton-pedir roboto-medium" href="Pedido.html">Pedir en Línea</a>
                 </div>
                 <div class="pizzas-sabores">
                    
                     <img src="./img/panceta.jpg" width="100px" alt="Pizza de Champiñón">
                     <h3 class="titulo-pizza roboto-bold">Pizza de Muzzarela con panceta</h3>
-                    <button class="boton-pedir">Pedir en Línea</button>
+                    <a class="boton-pedir roboto-medium" href="Pedido.html">Pedir en Línea</a>
                 </div>
                 <div class="pizzas-sabores">
                     
                     <img src="./img/calabresa.jpg" width="100px" alt="Pizza Calabresa">
                     <h3 class="titulo-pizza roboto-bold">Pizza Calabresa</h3>
-                    <button class="boton-pedir">Pedir en Línea</button>
+                    <button class="boton-pedir"> <a href="Pedido.html"></a>Pedir en Línea</button>
                 </div>
                 <div class="pizzas-sabores">
                     
-                    <img src="./img/margarita.jpg" width="100px" alt="Pizza Margarita">
+                    <img src="./img/muzzarella.jpg" width="100px" alt="Pizza Margarita">
                     <h3 class="titulo-pizza roboto-bold">Pizza Margarita</h3>
-                    <button class="boton-pedir">Pedir en Línea</button>
+                    <a class="boton-pedir roboto-medium" href="Pedido.html">Pedir en Línea</a>
                 </div>
             </div>
             <br><br>
@@ -84,33 +86,36 @@
     
     
         <div class="empanadas-content">
-            <ul class="empanadas-lista">
-                <li class="titulo-empanadas roboto-bold">Carne</li>
-                <li class="titulo-empanadas roboto-bold">Carne Picante</li>
-                <li class="titulo-empanadas roboto-bold">Cebolla y Queso</li>
-                <li class="titulo-empanadas roboto-bold">Humita</li>
-                <li class="titulo-empanadas roboto-bold">Jamón y Queso</li>
+            <ul class="empanadas-lista titulo-empanadas roboto-bold" >
+                <li >Carne</li>
+                <li >Carne Picante</li>
+                <li >Cebolla y Queso</li>
+                <li >Humita</li>
+                <li >Jamón y Queso</li>
             </ul>
           <img src="./img/empanadas.jpg" alt="Empanadas" class="empanadas-img">
-            <ul class="empanadas-lista">
-                <li class="titulo-empanadas roboto-bold">Pollo</li>
-                <li class="titulo-empanadas roboto-bold">Verdura</li>
-                <li class="titulo-empanadas roboto-bold">Mediterránea</li>
-                <li class="titulo-empanadas roboto-bold">Carne cortada a cuchillo</li>
-                <li class="titulo-empanadas roboto-bold">Bondiola BBQ</li>
+            <ul class="empanadas-lista titulo-empanadas roboto-bold">
+                <li >Pollo</li>
+                <li >Verdura</li>
+                <li >Mediterránea</li>
+                <li >Carne cortada a cuchillo</li>
+                <li >Bondiola BBQ</li>
             </ul>
         </div>
 
-        <button class="boton-pedir-empanadas">Pedir en Línea</button>
+        <a class="boton-pedir-empanadas" href="Pedido.html">Pedir en Línea</a>
     
 </section>
 
 
 
              <!-- Inicio de video  -->
-<section>
-    <h1>Descubre Nuestro Proceso de Creación de Pizzas</h1>
-    <video src="./video/videoplayback.mp4" muted autoplay loop></video>
+<section class="contenedor-Video">
+    <h1 class="titulo-video">Descubre Nuestro Proceso de Creación de Pizzas</h1>
+    <div class="card-video" >
+        <video  src="./video/videoplayback.mp4" muted autoplay loop></video>
+    </div>
+   
 </section>
  <!-- Formulario de consulta -->
 <section>

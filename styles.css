@@ -194,7 +194,18 @@ body {
 }
 
 
+/*Ajustes responsivos*/
+@media (max-width: 1024px) {
+    .title{
+        font-size: 2.5rem;/*Reducir tamaño para pantalla*/
+    }
 
+
+.subtitle-banner{
+    font-size: 1.3rem;/*Reducir tamaño para pantalla*/
+}
+
+}
 
 
 /*===CSS Seccion Pizzas===*/
@@ -227,7 +238,7 @@ body {
     margin-bottom: 10px;    
 }
 .boton-pedir{
-    background-color: #a13939;
+    background-color: #c83c3c;
     border: none;
     border-radius: 5px; 
     color: white;
@@ -238,7 +249,7 @@ body {
 }
 
 .boton-pedir:hover{
-    background-color:#8f3232;
+    background-color:#c83c3c;
 }
 .titulo-seccion-pizzas{
     text-align: center;
@@ -249,12 +260,15 @@ body {
 }
 
 
+
+
 /* Sección empanadas */
 .empanadas-contenedor {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #700fd6;
+    background-color: rgba(19, 19, 19, 0.1);
+    box-shadow: 0 2px 10px rgba(0, 0,0, 0.3);
     padding: 20px;
     text-align: center;
 }
@@ -302,13 +316,13 @@ margin-bottom: 25px;
 
 .boton-pedir-empanadas{
     margin-top: 40px;
-    background-color: #a13939;
+    background-color: #c83c3c;
     border: none;
     border-radius: 5px; 
     color: white;
     cursor: pointer;
     padding: 10px 15px;
-    font-size: 14px;
+    font-size: 18px;
 }
 
 .boton-pedir-empandas:hover{
@@ -317,7 +331,7 @@ margin-bottom: 25px;
 
 /*===Seccion reseñas===*/
 .reseñas{
-    background-color: #4a4a4a;
+    background-color: rgba(19, 19, 19, 0.1);
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -352,8 +366,26 @@ text-align: center;
     
 }
 /*===Seccion proceso de creacion video===*/
+.contenedor-Video {
+   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;/*Agregar espaciado alrededor del contenedor*/
+}
 
 
+.card-video{
+  width: 75%;
+  height: auto;
+  border-radius: 20px;
+  display: block;
+}
+
+.titulo-video{
+    font-size: 40px;
+    margin-bottom: 20px;
+}
 
 
 /*===Seccion formulario de contacto===*/
@@ -490,7 +522,7 @@ color: #007bff;
 
 /*Seccion Local*/
 .contenedor-local {
-    background-color: white;
+    background-color: rgb(43, 42, 42);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -542,8 +574,207 @@ color: #007bff;
 }
 .Titulo-Locales{
     font-size: 50px;  
-    color: #222;
+    color: #ffffff;
     align-self: flex-start;
     padding-left: 20px;
     margin-bottom: 20px;
+}
+/*Footer Pedido*/
+
+.footerPedido {
+    background-image: url('./img/FooterPrincipal.jpg'); 
+    background-size: cover; /* La imagen cubrirá todo el footer */
+    background-position: center; /* Centra la imagen */
+    height: 200px; /* Altura del footer */
+    display: flex;
+    align-items: center; /* Centra los elementos verticalmente */
+    color: white; /* Color del texto */
+}
+
+.footer-text {
+    font-size: 5em; /* Tamaño del texto */
+    text-align: center; /* Centra el texto */
+    flex: 1; /* Permite al texto ocupar el espacio sobrante */
+}
+
+
+.footer-contentPedido {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px; /* Espacio entre elementos del footer */
+}
+.footer-logo{
+    width: 7rem; /*ok*/
+    display: flex ;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-img {
+    width: 100px; /* Ancho de la imagen */
+    height: auto; /* Mantiene proporciones */
+    display: flex;
+    text-align: center;
+}
+/*CARD PEDIDOS*/
+
+.pizzas-pedido {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;/*Agregar espaciado alrededor del contenedor*/
+}
+.pizzas-sabores-pedido {
+ background-color: rgba(255,255,255, 0.1);  /*Fondo semi-trasparente*/ 
+ border-radius: 8px;
+ box-shadow: 0 2px 10px rgba(0, 0,0, 0.3);
+ margin: 10px;
+ padding: 20px;
+ width: 250px;
+ height: 350;
+ text-align: center;
+ display: flex;
+ flex-direction: column;
+ justify-content: space-between;
+ transition: transform 0.2; /*Efecto al pasar el mouse*/
+}
+.pizzas-sabores-pedido:hover {
+    transform: scale(1.05);/*Aumenta el tamaño al pasar el mouse */
+}
+.pizzas-sabores-pedido img {
+    border-radius: 5px;
+    margin-bottom: 10px;    
+}
+.boton-agregar{
+    background-color: #a13939;
+    border: none;
+    border-radius: 5px; 
+    color: white;
+    cursor: pointer;
+    padding: 10px 15px;
+    font-size: 14px;
+    margin-top: auto;
+}
+
+.boton-agregar:hover{
+    background-color:#8f3232;
+}
+.titulo-seccion-pizzas{
+    text-align: center;
+    font-size: 50px;
+    margin-top: 20px;
+    color: white;
+    
+}
+/*CARD EMPANADAS*/
+.empanadas-pedido {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;/*Agregar espaciado alrededor del contenedor*/
+}
+
+.empanadas-sabores-pedido {
+    background-color: rgba(255,255,255, 0.1);  /*Fondo semi-trasparente*/ 
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0,0, 0.3);
+    margin: 10px;
+    padding: 20px;
+    width: 250px;
+    height: 350;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.2; /*Efecto al pasar el mouse*/
+   }
+   .empanadas-sabores-pedido:hover {
+       transform: scale(1.05);/*Aumenta el tamaño al pasar el mouse */
+   }
+   .empanadas-sabores-pedido img {
+       border-radius: 5px;
+       margin-bottom: 10px;    
+   }
+   .boton-agregar{
+       background-color: #a13939;
+       border: none;
+       border-radius: 5px; 
+       color: white;
+       cursor: pointer;
+       padding: 10px 15px;
+       font-size: 14px;
+       margin-top: auto;
+   }
+   
+   .boton-agregar:hover{
+       background-color:#8f3232;
+   }
+   .titulo-seccion-empanadas{
+       text-align: center;
+       font-size: 50px;
+       margin-top: 20px;
+       color: white;
+       
+   }
+
+/* Contenedor del contador */
+.counter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #fefefe;
+    border-radius: 12px;
+    width: 100px;
+    margin: 10px auto; /* Centrar dentro de la tarjeta */
+    padding: 5px 10px;
+}
+
+/* Botones del contador */
+.counter-btn {
+    border: none;
+    background: none;
+    font-size: 1em;
+    cursor: pointer;
+    width: 50px;
+    text-align: center;
+}
+
+.counter-btn:active {
+    opacity: 0.7;
+}
+
+/* Valor del contador */
+#counter-value {
+    margin: 0 0px;
+    font-size: 1.2em;
+    width: 20px;
+    text-align: center;
+    
+}
+
+/*Carrito de compras*/
+#cart {
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-top: 20px;
+    background-color: #797979;
+}
+
+#cart-items .cart-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+#cart-total {
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.title-carrito {
+    text-align: center;
+    font-size: 30px;
+    margin-top: 20px;
+    color: rgb(255, 254, 254);
 }
